@@ -22,9 +22,9 @@ namespace Pierre.Controllers
       _db = db;
     }
 
-    public async Task<ActionResult> Index()
+    public ActionResult Index()
     {
-      List<Treat> model = _db.Treats.Include(treats => treats.Flavors).OrderBy(model => model.TreatName).ToList();
+      List<Treat> model = _db.Treats.OrderBy(model => model.TreatName).ToList();
 
       return View(model);
 
