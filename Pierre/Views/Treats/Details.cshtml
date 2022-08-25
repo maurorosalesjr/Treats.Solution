@@ -28,6 +28,7 @@ else
   </ul>
 }
 
+<p>@Html.ActionLink("Add a flavor", "AddFlavor", new { id = Model.TreatId }, new { @class = "accept" })</p>
 <p>@Html.ActionLink("Back to list", "Index", new { area = "" }, new { @class = "accept" })</p>
 <p>@Html.ActionLink("Edit Treat", "Edit", new { id = Model.TreatId }, new { @class = "accept" })</p>
 <p>@Html.ActionLink("Delete Treat", "Delete", new { id = Model.TreatId }, new { @class = "accept" })</p>
