@@ -2,23 +2,19 @@
   Layout = "_Layout";
 }
 
-@model Pierre.Models.Treat
+@model Pierre.Models.Flavor
 
 <h1>Edit</h1>
 
-<h4>Edit this task: @Html.DisplayFor(model => model.TreatName)</h4>
+<h4>Edit this flavor: @Html.DisplayFor(model => model.FlavorName)</h4>
 
 @using (Html.BeginForm())
 {
-    @Html.HiddenFor(model => model.TreatId)
+  @Html.HiddenFor(model => model.FlavorId)
 
-    @Html.LabelFor(model => model.TreatName)
-    @Html.EditorFor(model => model.TreatName)
+  @Html.LabelFor(model => model.FlavorName)
+  @Html.EditorFor(model => model.FlavorName)
 
-    @Html.Label("Select flavor")
-    @Html.DropDownList("FlavorId")
-
-    <input type="submit" value="Save" class="accept" />
+  <input type="submit" value="Save" class="accept" />
 }
-
 <p>@Html.ActionLink("Back to list", "Index", new { area = "" }, new { @class = "accept" })</p>

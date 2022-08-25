@@ -2,18 +2,13 @@
   Layout = "_Layout";
 }
 
-@model Pierre.Models.Treat
+@model Pierre.Models.Flavor
 
-<h1>Add a new task</h1>
-
+<h1>Add a new flavor</h1>
 @using (Html.BeginForm())
 {
-    @Html.LabelFor(model => model.TreatName)
-    @Html.TextBoxFor(model => model.TreatName)
-
-    @Html.Label("Select flavor")
-    @Html.DropDownList("FlavorId")
-
-    <input type="submit" value="Add new treat" class="accept" />
+  @Html.LabelFor(model => model.FlavorName)
+  @Html.TextBoxFor(model => model.FlavorName)
+  <input type="submit" value="Add new flavor" class="accept" />
 }
-<p>@Html.ActionLink("Show all treats", "Index", new { area = "" }, new { @class = "accept" })</p>
+<p>@Html.ActionLink("Show all flavors", "Index", new { area = "" }, new { @class = "accept" })</p>
