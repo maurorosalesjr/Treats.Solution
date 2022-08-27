@@ -42,7 +42,7 @@ Enables Pierre of Pierre's Bakery to see what treats he makes and the flavors th
 ![Home Index View](Pierre/wwwroot/img/Sample1.png "Home splash page that shows everyting Pierre makes")
 * Home splash page that shows everyting Pierre makes
 
-![Adding new treat](Factory/wwwroot/img/Sample1.png "Create view, adding new treat")
+![Adding new treat](Factory/wwwroot/img/Sample2.png "Create view, adding new treat")
 * Adding a new treat
 
 ![Treat details](Pierre/wwwroot/img/Sample3.png "Treat details")
