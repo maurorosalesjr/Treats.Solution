@@ -15,6 +15,7 @@
 * Entity Framework
 * LazyLoading
 * MVC
+* Identity 
 
 ## Description
 
